@@ -96,8 +96,15 @@
 }
 
 - (void) onDraw:(CADisplayLink*)displayLink {
-   
+    [self onDraw];
+    
+    [glContext presentRenderbuffer:GL_RENDERBUFFER];
 }
+
+- (void) onDraw {
+    
+}
+
 
 @end
 

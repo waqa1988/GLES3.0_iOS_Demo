@@ -17,6 +17,7 @@
     GLuint programObject;
 }
 
-- (void) onDraw:(CADisplayLink*)displayLink;
+- (void) onDraw;
+
 @end
 

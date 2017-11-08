@@ -26,8 +26,8 @@ GLuint vboIds[2];
 }
 */
 
-- (void) onDraw:(CADisplayLink *)displayLink {
-    [super onDraw:displayLink];
+- (void) onDraw {
+    [super onDraw];
     
     glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
     glClearColor(0, 0, 0, 0);
@@ -49,8 +49,6 @@ GLuint vboIds[2];
     GLushort indices[3] = {0, 1, 2};
     //[self drawPrimitiveWithoutVBOs:vertices andVtxStride:sizeof(GLfloat) * (VERTEX_POS_SIZE + VERTEX_COLOR_SIZE) andNumIndices:3 andIndices:indices];
     [self drawPrimitiveWithVBOsByNumVertices:3 andVtxBuf:vertices andVtxStride:sizeof(GLfloat) * (VERTEX_POS_SIZE + VERTEX_COLOR_SIZE) andNumIndices:3 andIndices:indices];
-    
-    [glContext presentRenderbuffer:GL_RENDERBUFFER];
 }
 
 - (void) drawPrimitiveWithoutVBOs:(GLfloat *)vertices andVtxStride:(GLint) vtxStride andNumIndices:(GLint) numIndices andIndices:(GLushort*) indices {
