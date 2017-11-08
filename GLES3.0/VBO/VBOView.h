@@ -12,4 +12,6 @@
 
 - (void) drawPrimitiveWithoutVBOs:(GLfloat *)vertices andVtxStride:(GLint) vtxStride andNumIndices:(GLint) numIndices andIndices:(GLushort*) indices;
 
+- (void) drawPrimitiveWithVBOsByNumVertices:(GLint)numVertices andVtxBuf:(GLfloat *)vtxBuf andVtxStride:(GLint)vtxStride andNumIndices:(GLint)numIndices andIndices:(GLushort *)indices;
+
 @end

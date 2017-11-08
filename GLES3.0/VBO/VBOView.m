@@ -16,6 +16,8 @@
 
 @implementation VBOView
 
+GLuint vboIds[2];
+
 /*
 // Only override drawRect: if you perform custom drawing.
 // An empty implementation adversely affects performance during animation.
@@ -45,8 +47,8 @@
     };
     
     GLushort indices[3] = {0, 1, 2};
-    
-    [self drawPrimitiveWithoutVBOs:vertices andVtxStride:sizeof(GLfloat) * (VERTEX_POS_SIZE + VERTEX_COLOR_SIZE) andNumIndices:3 andIndices:indices];
+    //[self drawPrimitiveWithoutVBOs:vertices andVtxStride:sizeof(GLfloat) * (VERTEX_POS_SIZE + VERTEX_COLOR_SIZE) andNumIndices:3 andIndices:indices];
+    [self drawPrimitiveWithVBOsByNumVertices:3 andVtxBuf:vertices andVtxStride:sizeof(GLfloat) * (VERTEX_POS_SIZE + VERTEX_COLOR_SIZE) andNumIndices:3 andIndices:indices];
     
     [glContext presentRenderbuffer:GL_RENDERBUFFER];
 }
@@ -69,6 +71,40 @@
     
     glDisableVertexAttribArray(VERTEX_POS_INDEX);
     glDisableVertexAttribArray(VERTEX_COLOR_INDEX);
+}
+
+- (void) drawPrimitiveWithVBOsByNumVertices:(GLint)numVertices andVtxBuf:(GLfloat *)vtxBuf andVtxStride:(GLint)vtxStride andNumIndices:(GLint)numIndices andIndices:(GLushort *)indices {
+    GLuint offset = 0;
+    
+    if (vboIds[0] == 0 && vboIds[1] == 0) {
+        glGenBuffers(2, vboIds);
+        
+        glBindBuffer(GL_ARRAY_BUFFER, vboIds[0]);
+        glBufferData(GL_ARRAY_BUFFER, vtxStride * numVertices, vtxBuf, GL_STATIC_DRAW);
+        
+        glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, vboIds[1]);
+        glBufferData(GL_ELEMENT_ARRAY_BUFFER, sizeof(GLushort) * numIndices, indices, GL_STATIC_DRAW);
+    }
+    
+    glBindBuffer(GL_ARRAY_BUFFER, vboIds[0]);
+    glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, vboIds[1]);
+    
+    glEnableVertexAttribArray(VERTEX_POS_INDEX);
+    glEnableVertexAttribArray(VERTEX_COLOR_INDEX);
+    
+    glVertexAttribPointer(VERTEX_POS_INDEX, VERTEX_POS_SIZE, GL_FLOAT, GL_FALSE, vtxStride, (const void *)offset);
+    
+    offset += VERTEX_POS_SIZE * sizeof(GLfloat);
+    glVertexAttribPointer(VERTEX_COLOR_INDEX, VERTEX_COLOR_SIZE, GL_FLOAT, GL_FALSE, vtxStride, (const void *)offset);
+    
+    offset = 0;
+    glDrawElements(GL_TRIANGLES, numIndices, GL_UNSIGNED_SHORT, (const void *)offset);
+    
+    glDisableVertexAttribArray(VERTEX_POS_INDEX);
+    glDisableVertexAttribArray(VERTEX_COLOR_INDEX);
+    
+    glBindBuffer(GL_ARRAY_BUFFER, 0);
+    glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, 0);
 }
 
 @end
