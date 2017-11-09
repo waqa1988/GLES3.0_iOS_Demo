@@ -53,7 +53,7 @@
 //    [self drawPrimitiveWithVBOsByNumVertices:3 andVtxBuf:vertices andVtxStride:sizeof(GLfloat) * (VERTEX_POS_SIZE + VERTEX_COLOR_SIZE) andNumIndices:3 andIndices:indices];
     
     
-    // 对每个属性使用一个换中区对象绘制
+    // 对每个属性使用一个换中区对象绘制.
     GLuint vtxStrides[2];
     vtxStrides[0] = sizeof(GLfloat) * VERTEX_POS_SIZE;
     vtxStrides[1] = sizeof(GLfloat) * VERTEX_COLOR_SIZE;
