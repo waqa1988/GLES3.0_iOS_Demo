@@ -7,6 +7,7 @@
 //
 
 #import "VBOView.h"
+#import "GLUtils.hpp"
 
 #define VERTEX_POS_SIZE 3
 #define VERTEX_COLOR_SIZE 4
@@ -23,6 +24,36 @@
     // Drawing code
 }
 */
+
+- (void) initShader {
+    NSString *vertexPath = [[NSBundle mainBundle] pathForResource:@"vertex" ofType:@"glsl"];
+    NSError *vertexError;
+    NSString *vertexShaderStr = [NSString stringWithContentsOfFile:vertexPath encoding:NSUTF8StringEncoding error:&vertexError];
+    NSString *fragPath = [[NSBundle mainBundle] pathForResource:@"frag" ofType:@"glsl"];
+    NSError *fragError;
+    NSString *fragShaderStr = [NSString stringWithContentsOfFile:fragPath encoding:NSUTF8StringEncoding error:&fragError];
+    
+    if (vertexShaderStr && fragShaderStr) {
+        GLuint vertexShader;
+        GLuint fragmentShader;
+        // Load the vertex/fragment shaders
+        vertexShader = loadShader(GL_VERTEX_SHADER, [vertexShaderStr UTF8String]);
+        fragmentShader = loadShader(GL_FRAGMENT_SHADER, [fragShaderStr UTF8String]);
+        
+        // create and link to program object
+        programObject = linkToProgram(vertexShader, fragmentShader);
+    }
+}
+
+- (void)onGLViewCreated {
+    [super onGLViewCreated];
+    
+    [self initShader];
+}
+
+- (void)onGLViewChanged:(GLint)w Height:(GLint)h {
+    [super onGLViewChanged:w Height:h];
+}
 
 - (void) onDraw {
     [super onDraw];

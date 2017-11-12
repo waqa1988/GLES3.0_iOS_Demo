@@ -8,7 +8,9 @@
 
 #import "DvGLESView.h"
 
-@interface VBOView : DvGLESView
+@interface VBOView : DvGLESView {
+    GLuint programObject;
+}
 
 
 /**
@@ -43,6 +45,6 @@
  @param numIndices <#numIndices description#>
  @param indices <#indices description#>
  */
-- (void) drawPrimitiveWithVBOs2ByNumVertices:(GLint)numVertices andVtxPosBuf:(GLfloat *)vtxPosBuf andVtxColorBuf:(GLfloat *)vtxColorBuf andVtxStride:(GLint *)vtxStride andNumIndices:(GLint)numIndices andIndices:(GLushort *)indices;
+- (void) drawPrimitiveWithVBOs2ByNumVertices:(GLint)numVertices andVtxPosBuf:(GLfloat *)vtxPosBuf andVtxColorBuf:(GLfloat *)vtxColorBuf andVtxStride:(GLuint *)vtxStride andNumIndices:(GLint)numIndices andIndices:(GLushort *)indices;
 
 @end

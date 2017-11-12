@@ -13,13 +13,17 @@
 		5354B0EF1FA4BB5500DCA5E7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5354B0EE1FA4BB5500DCA5E7 /* Assets.xcassets */; };
 		5354B0F21FA4BB5500DCA5E7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5354B0F01FA4BB5500DCA5E7 /* LaunchScreen.storyboard */; };
 		5354B0F51FA4BB5500DCA5E7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5354B0F41FA4BB5500DCA5E7 /* main.m */; };
-		5354B0FD1FA4BCA900DCA5E7 /* DvGLESView.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5354B0FC1FA4BCA900DCA5E7 /* DvGLESView.mm */; };
 		5354B1031FA4CF8100DCA5E7 /* GLUtils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5354B1011FA4CF8100DCA5E7 /* GLUtils.cpp */; };
 		5354B1091FA5869300DCA5E7 /* vertex.glsl in Resources */ = {isa = PBXBuildFile; fileRef = 5354B1081FA5869300DCA5E7 /* vertex.glsl */; };
 		5354B1121FA5D7AB00DCA5E7 /* frag.glsl in Resources */ = {isa = PBXBuildFile; fileRef = 5354B1111FA5D7AB00DCA5E7 /* frag.glsl */; };
-		539BE0FB1FB1F9D0003BBDFB /* GLUtils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 539BE0F91FB1F9D0003BBDFB /* GLUtils.cpp */; };
+		535543B31FB86E8E00D18485 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 535543B21FB86E8E00D18485 /* AppDelegate.m */; };
+		535543B61FB86E8E00D18485 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 535543B51FB86E8E00D18485 /* ViewController.m */; };
+		535543B91FB86E8E00D18485 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 535543B71FB86E8E00D18485 /* Main.storyboard */; };
+		535543BB1FB86E8E00D18485 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 535543BA1FB86E8E00D18485 /* Assets.xcassets */; };
+		535543BE1FB86E8E00D18485 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 535543BC1FB86E8E00D18485 /* LaunchScreen.storyboard */; };
+		535543C11FB86E8E00D18485 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 535543C01FB86E8E00D18485 /* main.m */; };
 		539BE0FF1FB1FA3E003BBDFB /* DvGLESView.mm in Sources */ = {isa = PBXBuildFile; fileRef = 539BE0FE1FB1FA3E003BBDFB /* DvGLESView.mm */; };
-		539BE1021FB1FDE9003BBDFB /* VBOView.m in Sources */ = {isa = PBXBuildFile; fileRef = 539BE1011FB1FDE9003BBDFB /* VBOView.m */; };
+		539BE1021FB1FDE9003BBDFB /* VBOView.mm in Sources */ = {isa = PBXBuildFile; fileRef = 539BE1011FB1FDE9003BBDFB /* VBOView.mm */; };
 		53C9F28C1FB1F45B00FFBB97 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 53C9F28B1FB1F45B00FFBB97 /* AppDelegate.m */; };
 		53C9F28F1FB1F45B00FFBB97 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 53C9F28E1FB1F45B00FFBB97 /* ViewController.m */; };
 		53C9F2921FB1F45B00FFBB97 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 53C9F2901FB1F45B00FFBB97 /* Main.storyboard */; };
@@ -28,10 +32,16 @@
 		53C9F29A1FB1F45B00FFBB97 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 53C9F2991FB1F45B00FFBB97 /* main.m */; };
 		53C9F2A01FB1F4C200FFBB97 /* vertex.glsl in Resources */ = {isa = PBXBuildFile; fileRef = 53C9F29F1FB1F4C200FFBB97 /* vertex.glsl */; };
 		53C9F2A21FB1F5BE00FFBB97 /* frag.glsl in Resources */ = {isa = PBXBuildFile; fileRef = 53C9F2A11FB1F5BE00FFBB97 /* frag.glsl */; };
+		53E23BB71FB874DA00710F87 /* DvLog.hpp in Sources */ = {isa = PBXBuildFile; fileRef = 5354B1051FA56B3D00DCA5E7 /* DvLog.hpp */; };
+		53E23BB81FB874DA00710F87 /* GLUtils.hpp in Sources */ = {isa = PBXBuildFile; fileRef = 5354B1021FA4CF8100DCA5E7 /* GLUtils.hpp */; };
+		53E23BB91FB874DA00710F87 /* GLUtils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5354B1011FA4CF8100DCA5E7 /* GLUtils.cpp */; };
+		53E23BBC1FB8882200710F87 /* TriangleView.mm in Sources */ = {isa = PBXBuildFile; fileRef = 53E23BBB1FB8882200710F87 /* TriangleView.mm */; };
+		53E23BBD1FB888A900710F87 /* DvGLESView.h in Sources */ = {isa = PBXBuildFile; fileRef = 539BE0FD1FB1FA3E003BBDFB /* DvGLESView.h */; };
+		53E23BBE1FB888A900710F87 /* DvGLESView.mm in Sources */ = {isa = PBXBuildFile; fileRef = 539BE0FE1FB1FA3E003BBDFB /* DvGLESView.mm */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		5354B0E21FA4BB5500DCA5E7 /* GLES3.0.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GLES3.0.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5354B0E21FA4BB5500DCA5E7 /* HelloTriangle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HelloTriangle.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5354B0E51FA4BB5500DCA5E7 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		5354B0E61FA4BB5500DCA5E7 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		5354B0E81FA4BB5500DCA5E7 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
@@ -41,20 +51,26 @@
 		5354B0F11FA4BB5500DCA5E7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5354B0F31FA4BB5500DCA5E7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5354B0F41FA4BB5500DCA5E7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		5354B0FB1FA4BCA900DCA5E7 /* DvGLESView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DvGLESView.h; sourceTree = "<group>"; };
-		5354B0FC1FA4BCA900DCA5E7 /* DvGLESView.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = DvGLESView.mm; sourceTree = "<group>"; };
 		5354B1011FA4CF8100DCA5E7 /* GLUtils.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = GLUtils.cpp; sourceTree = "<group>"; };
 		5354B1021FA4CF8100DCA5E7 /* GLUtils.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = GLUtils.hpp; sourceTree = "<group>"; };
 		5354B1051FA56B3D00DCA5E7 /* DvLog.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = DvLog.hpp; sourceTree = "<group>"; };
 		5354B1081FA5869300DCA5E7 /* vertex.glsl */ = {isa = PBXFileReference; lastKnownFileType = text; path = vertex.glsl; sourceTree = "<group>"; };
 		5354B1111FA5D7AB00DCA5E7 /* frag.glsl */ = {isa = PBXFileReference; lastKnownFileType = text; path = frag.glsl; sourceTree = "<group>"; };
-		539BE0F91FB1F9D0003BBDFB /* GLUtils.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = GLUtils.cpp; sourceTree = "<group>"; };
-		539BE0FA1FB1F9D0003BBDFB /* GLUtils.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = GLUtils.hpp; sourceTree = "<group>"; };
-		539BE0FC1FB1F9E9003BBDFB /* DvLog.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DvLog.h; sourceTree = "<group>"; };
+		535543AF1FB86E8E00D18485 /* VAO.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VAO.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		535543B11FB86E8E00D18485 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		535543B21FB86E8E00D18485 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		535543B41FB86E8E00D18485 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		535543B51FB86E8E00D18485 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		535543B81FB86E8E00D18485 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		535543BA1FB86E8E00D18485 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		535543BD1FB86E8E00D18485 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		535543BF1FB86E8E00D18485 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		535543C01FB86E8E00D18485 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		535543D81FB871A300D18485 /* targettest.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = targettest.plist; path = /Users/davi/XcodeProjects/GLES3.0_iOS_Demo/GLES3.0/targettest.plist; sourceTree = "<absolute>"; };
 		539BE0FD1FB1FA3E003BBDFB /* DvGLESView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DvGLESView.h; sourceTree = "<group>"; };
 		539BE0FE1FB1FA3E003BBDFB /* DvGLESView.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = DvGLESView.mm; sourceTree = "<group>"; };
 		539BE1001FB1FDE9003BBDFB /* VBOView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VBOView.h; sourceTree = "<group>"; };
-		539BE1011FB1FDE9003BBDFB /* VBOView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VBOView.m; sourceTree = "<group>"; };
+		539BE1011FB1FDE9003BBDFB /* VBOView.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = VBOView.mm; sourceTree = "<group>"; };
 		53C9F2881FB1F45B00FFBB97 /* VBO.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VBO.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		53C9F28A1FB1F45B00FFBB97 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		53C9F28B1FB1F45B00FFBB97 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -67,10 +83,19 @@
 		53C9F2991FB1F45B00FFBB97 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		53C9F29F1FB1F4C200FFBB97 /* vertex.glsl */ = {isa = PBXFileReference; lastKnownFileType = text; path = vertex.glsl; sourceTree = "<group>"; };
 		53C9F2A11FB1F5BE00FFBB97 /* frag.glsl */ = {isa = PBXFileReference; lastKnownFileType = text; path = frag.glsl; sourceTree = "<group>"; };
+		53E23BBA1FB8882200710F87 /* TriangleView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TriangleView.h; sourceTree = "<group>"; };
+		53E23BBB1FB8882200710F87 /* TriangleView.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = TriangleView.mm; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		5354B0DF1FA4BB5500DCA5E7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		535543AC1FB86E8E00D18485 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -90,17 +115,21 @@
 		5354B0D91FA4BB5500DCA5E7 = {
 			isa = PBXGroup;
 			children = (
+				53E23BB51FB8731600710F87 /* BaseCode */,
 				5354B0E41FA4BB5500DCA5E7 /* HelloTriangle */,
 				53C9F2891FB1F45B00FFBB97 /* VBO */,
+				535543B01FB86E8E00D18485 /* VAO */,
 				5354B0E31FA4BB5500DCA5E7 /* Products */,
+				535543D81FB871A300D18485 /* targettest.plist */,
 			);
 			sourceTree = "<group>";
 		};
 		5354B0E31FA4BB5500DCA5E7 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				5354B0E21FA4BB5500DCA5E7 /* GLES3.0.app */,
+				5354B0E21FA4BB5500DCA5E7 /* HelloTriangle.app */,
 				53C9F2881FB1F45B00FFBB97 /* VBO.app */,
+				535543AF1FB86E8E00D18485 /* VAO.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -118,11 +147,8 @@
 				5354B0F01FA4BB5500DCA5E7 /* LaunchScreen.storyboard */,
 				5354B0F31FA4BB5500DCA5E7 /* Info.plist */,
 				5354B0F41FA4BB5500DCA5E7 /* main.m */,
-				5354B0FB1FA4BCA900DCA5E7 /* DvGLESView.h */,
-				5354B0FC1FA4BCA900DCA5E7 /* DvGLESView.mm */,
-				5354B1011FA4CF8100DCA5E7 /* GLUtils.cpp */,
-				5354B1021FA4CF8100DCA5E7 /* GLUtils.hpp */,
-				5354B1051FA56B3D00DCA5E7 /* DvLog.hpp */,
+				53E23BBA1FB8882200710F87 /* TriangleView.h */,
+				53E23BBB1FB8882200710F87 /* TriangleView.mm */,
 			);
 			path = HelloTriangle;
 			sourceTree = "<group>";
@@ -134,6 +160,22 @@
 				5354B1111FA5D7AB00DCA5E7 /* frag.glsl */,
 			);
 			path = glsl;
+			sourceTree = "<group>";
+		};
+		535543B01FB86E8E00D18485 /* VAO */ = {
+			isa = PBXGroup;
+			children = (
+				535543B11FB86E8E00D18485 /* AppDelegate.h */,
+				535543B21FB86E8E00D18485 /* AppDelegate.m */,
+				535543B41FB86E8E00D18485 /* ViewController.h */,
+				535543B51FB86E8E00D18485 /* ViewController.m */,
+				535543B71FB86E8E00D18485 /* Main.storyboard */,
+				535543BA1FB86E8E00D18485 /* Assets.xcassets */,
+				535543BC1FB86E8E00D18485 /* LaunchScreen.storyboard */,
+				535543BF1FB86E8E00D18485 /* Info.plist */,
+				535543C01FB86E8E00D18485 /* main.m */,
+			);
+			path = VAO;
 			sourceTree = "<group>";
 		};
 		53C9F2891FB1F45B00FFBB97 /* VBO */ = {
@@ -149,13 +191,8 @@
 				53C9F2951FB1F45B00FFBB97 /* LaunchScreen.storyboard */,
 				53C9F2981FB1F45B00FFBB97 /* Info.plist */,
 				53C9F2991FB1F45B00FFBB97 /* main.m */,
-				539BE0F91FB1F9D0003BBDFB /* GLUtils.cpp */,
-				539BE0FA1FB1F9D0003BBDFB /* GLUtils.hpp */,
-				539BE0FC1FB1F9E9003BBDFB /* DvLog.h */,
-				539BE0FD1FB1FA3E003BBDFB /* DvGLESView.h */,
-				539BE0FE1FB1FA3E003BBDFB /* DvGLESView.mm */,
 				539BE1001FB1FDE9003BBDFB /* VBOView.h */,
-				539BE1011FB1FDE9003BBDFB /* VBOView.m */,
+				539BE1011FB1FDE9003BBDFB /* VBOView.mm */,
 			);
 			path = VBO;
 			sourceTree = "<group>";
@@ -169,12 +206,24 @@
 			path = glsl;
 			sourceTree = "<group>";
 		};
+		53E23BB51FB8731600710F87 /* BaseCode */ = {
+			isa = PBXGroup;
+			children = (
+				539BE0FD1FB1FA3E003BBDFB /* DvGLESView.h */,
+				539BE0FE1FB1FA3E003BBDFB /* DvGLESView.mm */,
+				5354B1051FA56B3D00DCA5E7 /* DvLog.hpp */,
+				5354B1021FA4CF8100DCA5E7 /* GLUtils.hpp */,
+				5354B1011FA4CF8100DCA5E7 /* GLUtils.cpp */,
+			);
+			path = BaseCode;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		5354B0E11FA4BB5500DCA5E7 /* GLES3.0 */ = {
+		5354B0E11FA4BB5500DCA5E7 /* HelloTriangle */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 5354B0F81FA4BB5500DCA5E7 /* Build configuration list for PBXNativeTarget "GLES3.0" */;
+			buildConfigurationList = 5354B0F81FA4BB5500DCA5E7 /* Build configuration list for PBXNativeTarget "HelloTriangle" */;
 			buildPhases = (
 				5354B0DE1FA4BB5500DCA5E7 /* Sources */,
 				5354B0DF1FA4BB5500DCA5E7 /* Frameworks */,
@@ -184,9 +233,26 @@
 			);
 			dependencies = (
 			);
-			name = GLES3.0;
+			name = HelloTriangle;
 			productName = MyGLES;
-			productReference = 5354B0E21FA4BB5500DCA5E7 /* GLES3.0.app */;
+			productReference = 5354B0E21FA4BB5500DCA5E7 /* HelloTriangle.app */;
+			productType = "com.apple.product-type.application";
+		};
+		535543AE1FB86E8E00D18485 /* VAO */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 535543C41FB86E8E00D18485 /* Build configuration list for PBXNativeTarget "VAO" */;
+			buildPhases = (
+				535543AB1FB86E8E00D18485 /* Sources */,
+				535543AC1FB86E8E00D18485 /* Frameworks */,
+				535543AD1FB86E8E00D18485 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = VAO;
+			productName = VAO;
+			productReference = 535543AF1FB86E8E00D18485 /* VAO.app */;
 			productType = "com.apple.product-type.application";
 		};
 		53C9F2871FB1F45B00FFBB97 /* VBO */ = {
@@ -219,6 +285,10 @@
 						CreatedOnToolsVersion = 9.0.1;
 						ProvisioningStyle = Automatic;
 					};
+					535543AE1FB86E8E00D18485 = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+					};
 					53C9F2871FB1F45B00FFBB97 = {
 						CreatedOnToolsVersion = 9.1;
 						ProvisioningStyle = Automatic;
@@ -238,8 +308,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				5354B0E11FA4BB5500DCA5E7 /* GLES3.0 */,
+				5354B0E11FA4BB5500DCA5E7 /* HelloTriangle */,
 				53C9F2871FB1F45B00FFBB97 /* VBO */,
+				535543AE1FB86E8E00D18485 /* VAO */,
 			);
 		};
 /* End PBXProject section */
@@ -254,6 +325,16 @@
 				5354B0EF1FA4BB5500DCA5E7 /* Assets.xcassets in Resources */,
 				5354B1121FA5D7AB00DCA5E7 /* frag.glsl in Resources */,
 				5354B0ED1FA4BB5500DCA5E7 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		535543AD1FB86E8E00D18485 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				535543BE1FB86E8E00D18485 /* LaunchScreen.storyboard in Resources */,
+				535543BB1FB86E8E00D18485 /* Assets.xcassets in Resources */,
+				535543B91FB86E8E00D18485 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -276,11 +357,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				53E23BBD1FB888A900710F87 /* DvGLESView.h in Sources */,
+				53E23BBE1FB888A900710F87 /* DvGLESView.mm in Sources */,
 				5354B0EA1FA4BB5500DCA5E7 /* ViewController.m in Sources */,
 				5354B0F51FA4BB5500DCA5E7 /* main.m in Sources */,
+				53E23BBC1FB8882200710F87 /* TriangleView.mm in Sources */,
 				5354B0E71FA4BB5500DCA5E7 /* AppDelegate.m in Sources */,
-				5354B0FD1FA4BCA900DCA5E7 /* DvGLESView.mm in Sources */,
 				5354B1031FA4CF8100DCA5E7 /* GLUtils.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		535543AB1FB86E8E00D18485 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				535543B61FB86E8E00D18485 /* ViewController.m in Sources */,
+				535543C11FB86E8E00D18485 /* main.m in Sources */,
+				535543B31FB86E8E00D18485 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -288,9 +381,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				539BE1021FB1FDE9003BBDFB /* VBOView.m in Sources */,
+				53E23BB71FB874DA00710F87 /* DvLog.hpp in Sources */,
+				53E23BB81FB874DA00710F87 /* GLUtils.hpp in Sources */,
+				53E23BB91FB874DA00710F87 /* GLUtils.cpp in Sources */,
+				539BE1021FB1FDE9003BBDFB /* VBOView.mm in Sources */,
 				539BE0FF1FB1FA3E003BBDFB /* DvGLESView.mm in Sources */,
-				539BE0FB1FB1F9D0003BBDFB /* GLUtils.cpp in Sources */,
 				53C9F28F1FB1F45B00FFBB97 /* ViewController.m in Sources */,
 				53C9F29A1FB1F45B00FFBB97 /* main.m in Sources */,
 				53C9F28C1FB1F45B00FFBB97 /* AppDelegate.m in Sources */,
@@ -312,6 +407,22 @@
 			isa = PBXVariantGroup;
 			children = (
 				5354B0F11FA4BB5500DCA5E7 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		535543B71FB86E8E00D18485 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				535543B81FB86E8E00D18485 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		535543BC1FB86E8E00D18485 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				535543BD1FB86E8E00D18485 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -471,6 +582,36 @@
 			};
 			name = Release;
 		};
+		535543C21FB86E8E00D18485 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SZ3LQ8GH8Q;
+				INFOPLIST_FILE = VAO/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.dv.VAO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		535543C31FB86E8E00D18485 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SZ3LQ8GH8Q;
+				INFOPLIST_FILE = VAO/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.dv.VAO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		53C9F29C1FB1F45B00FFBB97 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -520,11 +661,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		5354B0F81FA4BB5500DCA5E7 /* Build configuration list for PBXNativeTarget "GLES3.0" */ = {
+		5354B0F81FA4BB5500DCA5E7 /* Build configuration list for PBXNativeTarget "HelloTriangle" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				5354B0F91FA4BB5500DCA5E7 /* Debug */,
 				5354B0FA1FA4BB5500DCA5E7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		535543C41FB86E8E00D18485 /* Build configuration list for PBXNativeTarget "VAO" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				535543C21FB86E8E00D18485 /* Debug */,
+				535543C31FB86E8E00D18485 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

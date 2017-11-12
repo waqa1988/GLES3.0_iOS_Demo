@@ -14,8 +14,11 @@
     CAEAGLLayer * eaglLayer;
     EAGLContext * glContext;
     GLuint _colorRenderBuffer;
-    GLuint programObject;
 }
+
+- (void) onGLViewCreated;
+
+- (void) onGLViewChanged:(GLint)w Height:(GLint)h;
 
 - (void) onDraw;
 

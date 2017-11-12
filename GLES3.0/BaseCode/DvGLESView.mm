@@ -7,16 +7,8 @@
 //
 
 #import "DvGLESView.h"
-#import "GLUtils.hpp"
 
 @implementation DvGLESView
-
-GLuint programObject;
-GLfloat vVertices[] = {
-    0.0f, 0.5f, 0.0f,
-    -0.5f, -0.5f, 0.0f,
-    0.5f, -0.5f, 0.0
-};
 
 - (instancetype)initWithFrame:(CGRect)frame {
     self = [super initWithFrame:frame];
@@ -56,26 +48,6 @@ GLfloat vVertices[] = {
     }
 }
 
-- (void) initShader {
-    NSString *vertexPath = [[NSBundle mainBundle] pathForResource:@"vertex" ofType:@"glsl"];
-    NSError *vertexError;
-    NSString *vertexShaderStr = [NSString stringWithContentsOfFile:vertexPath encoding:NSUTF8StringEncoding error:&vertexError];
-    NSString *fragPath = [[NSBundle mainBundle] pathForResource:@"frag" ofType:@"glsl"];
-    NSError *fragError;
-    NSString *fragShaderStr = [NSString stringWithContentsOfFile:fragPath encoding:NSUTF8StringEncoding error:&fragError];
-    
-    if (vertexShaderStr && fragShaderStr) {
-        GLuint vertexShader;
-        GLuint fragmentShader;
-        // Load the vertex/fragment shaders
-        vertexShader = loadShader(GL_VERTEX_SHADER, [vertexShaderStr UTF8String]);
-        fragmentShader = loadShader(GL_FRAGMENT_SHADER, [fragShaderStr UTF8String]);
-        
-        // create and link to program object
-        programObject = linkToProgram(vertexShader, fragmentShader);
-    }
-}
-
 - (void)setupRenderBuffer {
     glGenRenderbuffers(1, &_colorRenderBuffer);
     glBindRenderbuffer(GL_RENDERBUFFER, _colorRenderBuffer);
@@ -93,7 +65,6 @@ GLfloat vVertices[] = {
 - (void) onGLViewCreated {
     [self setLayer];
     [self setContext];
-    [self initShader];
     [self setupRenderBuffer];
     [self setupFrameBuffer];
 }
@@ -103,19 +74,15 @@ GLfloat vVertices[] = {
 }
 
 - (void) onDraw:(CADisplayLink*)displayLink {
-    glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
-    glClearColor(0, 0, 0, 0);
-
-    if (programObject < 1)
-        return;
-
-    glUseProgram(programObject);
-    
-    glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 0, vVertices);
-    glEnableVertexAttribArray(0);
-    glDrawArrays(GL_TRIANGLES, 0, 3);
+    [self onDraw];
     
     [glContext presentRenderbuffer:GL_RENDERBUFFER];
 }
 
+- (void) onDraw {
+    
+}
+
+
 @end
+

@@ -1,13 +1,12 @@
 //
 //  ViewController.m
-//  MyGLES
+//  VAO
 //
-//  Created by davi on 2017/10/28.
+//  Created by davi on 2017/11/12.
 //  Copyright © 2017年 davi. All rights reserved.
 //
 
 #import "ViewController.h"
-#import "TriangleView.h"
 
 @interface ViewController ()
 
@@ -17,10 +16,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
-    CGRect screenBounds = [[UIScreen mainScreen] bounds];
-    DvGLESView *glView = [[TriangleView alloc] initWithFrame:screenBounds];
-    [self.view addSubview:glView];
+    // Do any additional setup after loading the view, typically from a nib.
 }
 
 
@@ -28,5 +24,6 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
 
 @end
