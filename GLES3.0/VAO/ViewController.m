@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "VAOView.h"
 
 @interface ViewController ()
 
@@ -16,7 +17,10 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+
+    CGRect screenBound = [[UIScreen mainScreen] bounds];
+    VAOView * view = [[VAOView alloc] initWithFrame:screenBound];
+    [self.view addSubview:view];
 }
 
 

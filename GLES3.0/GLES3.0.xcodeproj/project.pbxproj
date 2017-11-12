@@ -32,12 +32,17 @@
 		53C9F29A1FB1F45B00FFBB97 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 53C9F2991FB1F45B00FFBB97 /* main.m */; };
 		53C9F2A01FB1F4C200FFBB97 /* vertex.glsl in Resources */ = {isa = PBXBuildFile; fileRef = 53C9F29F1FB1F4C200FFBB97 /* vertex.glsl */; };
 		53C9F2A21FB1F5BE00FFBB97 /* frag.glsl in Resources */ = {isa = PBXBuildFile; fileRef = 53C9F2A11FB1F5BE00FFBB97 /* frag.glsl */; };
-		53E23BB71FB874DA00710F87 /* DvLog.hpp in Sources */ = {isa = PBXBuildFile; fileRef = 5354B1051FA56B3D00DCA5E7 /* DvLog.hpp */; };
 		53E23BB81FB874DA00710F87 /* GLUtils.hpp in Sources */ = {isa = PBXBuildFile; fileRef = 5354B1021FA4CF8100DCA5E7 /* GLUtils.hpp */; };
 		53E23BB91FB874DA00710F87 /* GLUtils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5354B1011FA4CF8100DCA5E7 /* GLUtils.cpp */; };
 		53E23BBC1FB8882200710F87 /* TriangleView.mm in Sources */ = {isa = PBXBuildFile; fileRef = 53E23BBB1FB8882200710F87 /* TriangleView.mm */; };
 		53E23BBD1FB888A900710F87 /* DvGLESView.h in Sources */ = {isa = PBXBuildFile; fileRef = 539BE0FD1FB1FA3E003BBDFB /* DvGLESView.h */; };
 		53E23BBE1FB888A900710F87 /* DvGLESView.mm in Sources */ = {isa = PBXBuildFile; fileRef = 539BE0FE1FB1FA3E003BBDFB /* DvGLESView.mm */; };
+		53E23BC11FB88CA900710F87 /* VAOView.mm in Sources */ = {isa = PBXBuildFile; fileRef = 53E23BC01FB88CA900710F87 /* VAOView.mm */; };
+		53E23BC91FB88F7F00710F87 /* vertex.glsl in Resources */ = {isa = PBXBuildFile; fileRef = 53E23BC81FB88F7F00710F87 /* vertex.glsl */; };
+		53E23BCB1FB8920300710F87 /* DvGLESView.mm in Sources */ = {isa = PBXBuildFile; fileRef = 539BE0FE1FB1FA3E003BBDFB /* DvGLESView.mm */; };
+		53E23BCD1FB8920300710F87 /* GLUtils.hpp in Sources */ = {isa = PBXBuildFile; fileRef = 5354B1021FA4CF8100DCA5E7 /* GLUtils.hpp */; };
+		53E23BCE1FB8920300710F87 /* GLUtils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5354B1011FA4CF8100DCA5E7 /* GLUtils.cpp */; };
+		53E23BD01FB892EF00710F87 /* frag.glsl in Resources */ = {isa = PBXBuildFile; fileRef = 53E23BCF1FB892EF00710F87 /* frag.glsl */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -85,6 +90,10 @@
 		53C9F2A11FB1F5BE00FFBB97 /* frag.glsl */ = {isa = PBXFileReference; lastKnownFileType = text; path = frag.glsl; sourceTree = "<group>"; };
 		53E23BBA1FB8882200710F87 /* TriangleView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TriangleView.h; sourceTree = "<group>"; };
 		53E23BBB1FB8882200710F87 /* TriangleView.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = TriangleView.mm; sourceTree = "<group>"; };
+		53E23BBF1FB88CA900710F87 /* VAOView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VAOView.h; sourceTree = "<group>"; };
+		53E23BC01FB88CA900710F87 /* VAOView.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = VAOView.mm; sourceTree = "<group>"; };
+		53E23BC81FB88F7F00710F87 /* vertex.glsl */ = {isa = PBXFileReference; lastKnownFileType = text; path = vertex.glsl; sourceTree = "<group>"; };
+		53E23BCF1FB892EF00710F87 /* frag.glsl */ = {isa = PBXFileReference; lastKnownFileType = text; path = frag.glsl; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -165,6 +174,7 @@
 		535543B01FB86E8E00D18485 /* VAO */ = {
 			isa = PBXGroup;
 			children = (
+				53E23BC21FB88EAD00710F87 /* glsl */,
 				535543B11FB86E8E00D18485 /* AppDelegate.h */,
 				535543B21FB86E8E00D18485 /* AppDelegate.m */,
 				535543B41FB86E8E00D18485 /* ViewController.h */,
@@ -174,6 +184,8 @@
 				535543BC1FB86E8E00D18485 /* LaunchScreen.storyboard */,
 				535543BF1FB86E8E00D18485 /* Info.plist */,
 				535543C01FB86E8E00D18485 /* main.m */,
+				53E23BBF1FB88CA900710F87 /* VAOView.h */,
+				53E23BC01FB88CA900710F87 /* VAOView.mm */,
 			);
 			path = VAO;
 			sourceTree = "<group>";
@@ -216,6 +228,15 @@
 				5354B1011FA4CF8100DCA5E7 /* GLUtils.cpp */,
 			);
 			path = BaseCode;
+			sourceTree = "<group>";
+		};
+		53E23BC21FB88EAD00710F87 /* glsl */ = {
+			isa = PBXGroup;
+			children = (
+				53E23BC81FB88F7F00710F87 /* vertex.glsl */,
+				53E23BCF1FB892EF00710F87 /* frag.glsl */,
+			);
+			path = glsl;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -333,7 +354,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				535543BE1FB86E8E00D18485 /* LaunchScreen.storyboard in Resources */,
+				53E23BC91FB88F7F00710F87 /* vertex.glsl in Resources */,
 				535543BB1FB86E8E00D18485 /* Assets.xcassets in Resources */,
+				53E23BD01FB892EF00710F87 /* frag.glsl in Resources */,
 				535543B91FB86E8E00D18485 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -371,7 +394,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				53E23BCB1FB8920300710F87 /* DvGLESView.mm in Sources */,
+				53E23BCD1FB8920300710F87 /* GLUtils.hpp in Sources */,
+				53E23BCE1FB8920300710F87 /* GLUtils.cpp in Sources */,
 				535543B61FB86E8E00D18485 /* ViewController.m in Sources */,
+				53E23BC11FB88CA900710F87 /* VAOView.mm in Sources */,
 				535543C11FB86E8E00D18485 /* main.m in Sources */,
 				535543B31FB86E8E00D18485 /* AppDelegate.m in Sources */,
 			);
@@ -381,7 +408,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				53E23BB71FB874DA00710F87 /* DvLog.hpp in Sources */,
 				53E23BB81FB874DA00710F87 /* GLUtils.hpp in Sources */,
 				53E23BB91FB874DA00710F87 /* GLUtils.cpp in Sources */,
 				539BE1021FB1FDE9003BBDFB /* VBOView.mm in Sources */,
@@ -484,10 +510,7 @@
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
+				GCC_PREPROCESSOR_DEFINITIONS = "DV_IOS=1";
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
@@ -537,6 +560,7 @@
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = "DV_IOS=1";
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
