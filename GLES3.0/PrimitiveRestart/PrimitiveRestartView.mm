@@ -60,7 +60,7 @@
         0.5f, 0.0f, 0.0f,
         0.0f, 0.0f, 1.0f, 1.0f,
     };
-    
+    // 0xFFFF索引为特殊索引，用于图元重启
     GLushort indices[12] = {0, 1, 2, 0xFFFF, 3, 4, 5};
     // 不使用顶点缓冲区对象绘制图形
     [self drawPrimitiveWithoutVBOs:vertices andVtxStride:sizeof(GLfloat) * (VERTEX_POS_SIZE + VERTEX_COLOR_SIZE) andNumIndices:12 andIndices:indices];
@@ -100,10 +100,11 @@
     vtxBuf += VERTEX_POS_SIZE;
     glVertexAttribPointer(VERTEX_COLOR_INDEX, VERTEX_COLOR_SIZE, GL_FLOAT, GL_FALSE, vtxStride, vtxBuf);
     
+    // 打开图元重启
     glEnable(GL_PRIMITIVE_RESTART_FIXED_INDEX);
     
     glDrawElements(GL_TRIANGLES, numIndices, GL_UNSIGNED_SHORT, indices);
-    
+    // 关闭图元重启
     glDisable(GL_PRIMITIVE_RESTART_FIXED_INDEX);
     
     glDisableVertexAttribArray(VERTEX_POS_INDEX);
